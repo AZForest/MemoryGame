@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+.App {
+  text-align: center;
+  height: 100%;
+  color: #f2e6d9;
+  font-family: 'Hanalei Fill', cursive;
+  border: none;
+}
+h1 {
+  margin: 0px auto 20px auto;
+  font-size: 50px;
+  text-shadow: 5px 5px 20px 5px #4d3319;
+}
+h2 {
+  font-size: 30px;
+}
+.Cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 550px;
+  
+  background-color: rgba(57, 38, 19, 0.5);
+  /*box-shadow: 0px 0px 1px 1px #f2e6d9;*/
+  border-radius: 20px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 1;
+}
+.Ccard {
+  width: 100px;
+  height: 100px;
+  perspective: 600px;
+  margin: 15px;
+  opacity: 1 !important;
+  
+}
+.Ccard:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  /*box-shadow: 0px 0px 3px 1px white;*/
+  opacity: 1 !important;
+}
+
+.card__face--front {
+  /*green : #79d279 */
+  /*background: linear-gradient(#79d279, #3f87a6);*/
+  background: linear-gradient(#4d3319, #261a0d
+  );
+  color: black;
+}
+
+.card__face--front img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.card__face--back {
+  /*background-color: #2980b9;*/
+  /*background-color: #f69d3c;*/
+  background-color:brown;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card__face--back img {
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+  margin: 10px auto 0 auto;
+}
+
+@media (min-width: 2200px) {
+  .App {
+    transform: scale(1.5);
+  }
+  h1 {
+    margin-top: 500px !important;
+  }
+}
+
+@media (min-width: 1601px) {
+  h1 {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .App {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 500px) {
+  .App {
+    padding-top: 0;
+    transform: scale(0.5);
+    position: relative;
+    top: -100px;
+  }
+  .Cards {
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,32 @@
+html {
+  height: 110vh;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background-image: url("./assets/isbg4.jpg");*/
+  background: linear-gradient(#33ccff,  #007399);
+  background-repeat: no-repeat;
+  height: 100vh;
+  border: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (min-width: 2600px) {
+  body {
+    padding-top: 1450px !important;
+    background-size: cover !important;
+  }
+}
+
+

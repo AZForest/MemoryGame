@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+.WinMessage {
+    background-color: rgba(57, 38, 19, 0.9);
+    height: 200px;
+    width: 400px;
+    font-size: 24px;
+    color: #f2e6d9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+
+}
+h4 {
+    margin: 20px 0;
+}
+p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+button {
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Hanalei Fill', cursive;
+    color:rgb(57, 38, 19);
+    border-radius: 5px;
+    border: none;
+    background-color: #f2e6d9;
+    margin-top: 10px;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 1px #79d279;
+    
+}
