@@ -39,9 +39,7 @@ class App extends Component {
   };
 
   flipCardHandler = (id) => {
-    console.log(this.state.baseState);
     const newArray = [...this.state.cardsArr];
-    // const element = newArray[id - 1];
     let element;
     newArray.forEach(item => {
       if (item.id === id) {
@@ -72,7 +70,6 @@ class App extends Component {
       }
       return sc2;
     })
-    console.log(sc2);
 
     if (sc2.length === 2) {
       setTimeout(() => {
@@ -85,9 +82,7 @@ class App extends Component {
            this.setFalseHandler();
          }
      }, 1500);
-     
     }
-
   }
 
   removeHandler = (id1, id2) => {
@@ -128,6 +123,7 @@ class App extends Component {
     }
   }
 
+  //Shuffles Cards on restart or new game
   shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -153,7 +149,6 @@ class App extends Component {
   }
 
   render() {
-
     let cardStyle = {
       position: "relative",
       width: "100%",
@@ -171,7 +166,7 @@ class App extends Component {
       textAlign: "center",
       transition: "opacity 1s ease-out",
       transformStyle: "preserve-3d",
-      boxShadow: "0px 0px 10px 10px #79d279",
+      boxShadow: "0px 0px 10px 10px lightblue",
       borderRadius: "20px",
       opacity: "0",
     }
