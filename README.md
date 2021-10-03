@@ -24,5 +24,6 @@ MemoryGame is a simple matching game that allows users to turn over 2 cards at a
 
 ### Built with:
 
-* React, using create-react-app
+* React
+  * Created with [create-react-app](https://github.com/facebook/create-react-app)
 * CSS
