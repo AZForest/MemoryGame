@@ -1,6 +1,7 @@
 # MemoryGame
 
 MemoryGame is a simple matching game that allows users to turn over 2 cards at a time to see if they match. If the 2 cards match, the 2 cards are removed from the board. If they do not match, both cards are turned back over and remain on the board. Number of moves is tracked by the app. 
+* Live Link: [MemoryGame](https://azforest.github.io/MemoryGame)
 
 ## Screenshots
 
